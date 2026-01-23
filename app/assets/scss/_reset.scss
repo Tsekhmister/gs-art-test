@@ -1,0 +1,63 @@
+// Reset and normalize styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  background: transparent;
+  text-decoration: none;
+  outline: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  background: transparent;
+  outline: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  appearance: none;
+  border: none;
+  outline: transparent;
+  outline-offset: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  text-size-adjust: 100%;
+}

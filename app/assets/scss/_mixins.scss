@@ -1,0 +1,176 @@
+@use 'variables' as *;
+
+// ===== Media Query Mixins =====
+
+// From mixins (min-width)
+@mixin from-320 {
+  @media (min-width: $breakpoint-320) {
+    @content;
+  }
+}
+@mixin from-390 {
+  @media (min-width: $breakpoint-390) {
+    @content;
+  }
+}
+@mixin from-576 {
+  @media (min-width: $breakpoint-576) {
+    @content;
+  }
+}
+@mixin from-768 {
+  @media (min-width: $breakpoint-768) {
+    @content;
+  }
+}
+@mixin from-992 {
+  @media (min-width: $breakpoint-992) {
+    @content;
+  }
+}
+@mixin from-1200 {
+  @media (min-width: $breakpoint-1200) {
+    @content;
+  }
+}
+@mixin from-1400 {
+  @media (min-width: $breakpoint-1400) {
+    @content;
+  }
+}
+@mixin from-1440 {
+  @media (min-width: $breakpoint-1440) {
+    @content;
+  }
+}
+@mixin from-1920 {
+  @media (min-width: $breakpoint-1920) {
+    @content;
+  }
+}
+
+// Until mixins (max-width)
+@mixin until-320 {
+  @media (max-width: ($breakpoint-320 - 1px)) {
+    @content;
+  }
+}
+@mixin until-390 {
+  @media (max-width: ($breakpoint-390 - 1px)) {
+    @content;
+  }
+}
+@mixin until-576 {
+  @media (max-width: ($breakpoint-576 - 1px)) {
+    @content;
+  }
+}
+@mixin until-768 {
+  @media (max-width: ($breakpoint-768 - 1px)) {
+    @content;
+  }
+}
+@mixin until-992 {
+  @media (max-width: ($breakpoint-992 - 1px)) {
+    @content;
+  }
+}
+@mixin until-1200 {
+  @media (max-width: ($breakpoint-1200 - 1px)) {
+    @content;
+  }
+}
+@mixin until-1400 {
+  @media (max-width: ($breakpoint-1400 - 1px)) {
+    @content;
+  }
+}
+@mixin until-1440 {
+  @media (max-width: ($breakpoint-1440 - 1px)) {
+    @content;
+  }
+}
+@mixin until-1920 {
+  @media (max-width: ($breakpoint-1920 - 1px)) {
+    @content;
+  }
+}
+
+// Landscape orientation
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+// Portrait orientation
+@mixin portrait {
+  @media (orientation: portrait) {
+    @content;
+  }
+}
+
+// Landscape mobile (small height)
+@mixin landscape-mobile {
+  @media (max-height: 500px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+// Touch devices (mobile, tablet)
+@mixin touch {
+  @media (hover: none) and (pointer: coarse) {
+    @content;
+  }
+}
+
+// Retina display (2x, 3x)
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+// ===== Layout Mixins =====
+
+// Flexbox center
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Flexbox column
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Flexbox space between
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Truncate text
+@mixin truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Transition
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+  transition: $property $duration $timing;
+}
+
+// Line clamp (multiline text truncation)
+@mixin line-clamp($lines: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}

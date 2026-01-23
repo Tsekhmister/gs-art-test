@@ -1,0 +1,37 @@
+// ===== CSS Custom Properties (available everywhere) =====
+:root {
+  /* Colors */
+  --color-primary: #000;
+  --color-secondary: #6b6b6b;
+
+  /* Fonts */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  /* Font sizes */
+  --font-size-xs: 8px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 40px;
+  --font-size-jumbo: 48px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-default: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+// ===== Breakpoints (media queries) =====
+$breakpoint-320: 320px;
+$breakpoint-390: 390px;
+$breakpoint-576: 576px;
+$breakpoint-768: 768px;
+$breakpoint-992: 992px;
+$breakpoint-1200: 1200px;
+$breakpoint-1400: 1400px;
+$breakpoint-1440: 1440px;
+$breakpoint-1920: 1920px;
